@@ -25,3 +25,5 @@ Here are some screenshots from WikiRandom:
 
 
 ![wikirandom - android - screenshot 3](https://user-images.githubusercontent.com/25127522/28496390-5df57382-6f72-11e7-8572-f7a30707659f.png)
+
+© 2017 Lior Reytan, Aviv Rahamim. All Rights Reserved.
