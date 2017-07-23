@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviv.wikirandom.View.LangActivity"
+    android:orientation="vertical"
+    android:layoutDirection="ltr">
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bordered_button"
+        android:drawableLeft="@drawable/exit"
+        android:gravity="center"
+        android:text="Logout"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="logoutAction"/>
+
+    <TextView
+        android:id="@+id/gameTitle_Lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="WikiRandom"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/languageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameTitle_Lang"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Language Selection"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/heButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/languageTitle"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bordered_button"
+        android:drawableLeft="@drawable/israel_flag"
+        android:gravity="center"
+        android:text="שחק בעברית "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:tag="1"
+        android:onClick="languageSelect"/>
+
+    <Button
+        android:id="@+id/enButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heButton"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bordered_button"
+        android:drawableLeft="@drawable/usa_flag"
+        android:gravity="center"
+        android:text=" Play in English"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:tag="2"
+        android:onClick="languageSelect"/>
+
+    <Button
+        android:id="@+id/ruButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enButton"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bordered_button"
+        android:drawableLeft="@drawable/russia_flag"
+        android:gravity="center"
+        android:text=" Играть на русском"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:tag="3"
+        android:onClick="languageSelect"/>
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/trophy"
+        android:gravity="center"
+        android:text="Leaderboard"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="goToLeaderboard"/>
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/info"
+        android:gravity="center"
+        android:text="About"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="goToAbout"/>
+
+</RelativeLayout>

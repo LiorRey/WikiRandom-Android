@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviv.wikirandom.View.GameActivity"
+    android:weightSum="20"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="10">
+
+        <FrameLayout
+            android:id="@+id/frameLayout1_Game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/rndmArticleWV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </WebView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2_Game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/scoreBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonNext"
+                android:gravity="center"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:onClick="keyboardDown"/>
+
+            <ImageButton
+                android:id="@+id/muteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/buttonNext"
+                android:onClick="switchVolumeStatus"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/correctBar"
+            android:layout_below="@id/frameLayout2_Game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonNext"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:onClick="keyboardDown"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="@drawable/bordered_button"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="checkAnswer"
+        android:tag="1"/>
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="@drawable/bordered_button"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="checkAnswer"
+        android:tag="2"/>
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="@drawable/bordered_button"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="checkAnswer"
+        android:tag="3"/>
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="@drawable/bordered_button"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="checkAnswer"
+        android:tag="4"/>
+
+    <Button
+        android:id="@+id/nextArtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#FFD700"
+        android:gravity="center"
+        android:onClick="showRandomArticle"/>
+
+</LinearLayout>

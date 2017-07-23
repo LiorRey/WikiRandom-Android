@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviv.wikirandom.View.RegisterActivity">
+
+    <TextView
+        android:id="@+id/gameTitle_Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="WikiRandom"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/registrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameTitle_Reg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Registration"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/emailField_Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registrationTitle"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/nicknameField_Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailField_Reg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:hint="Nickname"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/passwordField_Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nicknameField_Reg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Password (at least 6 characters)"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/confirmPasswordField_Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordField_Reg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textSize="14sp"/>
+
+
+    <Button
+        android:id="@+id/cancelButton_Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel"
+        android:background="@drawable/bordered_button"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="cancelAction"/>
+
+    <Button
+        android:id="@+id/registerButton_Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancelButton_Reg"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:background="@drawable/bordered_button"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="registerAction"/>
+
+</RelativeLayout>

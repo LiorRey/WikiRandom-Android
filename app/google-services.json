@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "39142514780",
+    "firebase_url": "https://wikirandom-7a458.firebaseio.com",
+    "project_id": "wikirandom-7a458",
+    "storage_bucket": "wikirandom-7a458.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39142514780:android:be5b3ef6be2328fc",
+        "android_client_info": {
+          "package_name": "com.example.aviv.wikirandom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39142514780-mjh0o68n1i0f7iielitfhv8j9u405uau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aviv.wikirandom",
+            "certificate_hash": "6024a6bad4ffcee0e4dffaeb88f7873aa5590aaa"
+          }
+        },
+        {
+          "client_id": "39142514780-a3pnag0go8e2jqs0dcrrb005g2p0l2p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO97IbgAgwReKmIY7mgY18oaSKIdWLzA8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39142514780-c9n6eab958p2q899p4me7aiborcqt1tg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Lior-Aviv-inc.WikiRandom"
+              }
+            },
+            {
+              "client_id": "39142514780-a3pnag0go8e2jqs0dcrrb005g2p0l2p3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviv.wikirandom.View.LeaderboardActivity"
+    android:layoutDirection="ltr">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_Lead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/gameTitle_Lead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/buttonNext"
+            android:gravity="center"
+            android:text="WikiRandom"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/trophyImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/trophy"
+            android:tint="@android:color/black"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/leaderboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout_Lead"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Highscore Leaderboard"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/leaderboardNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaderboardTitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/leaderboard_note"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/leaderboardTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaderboardNote"
+        android:layout_marginTop="20dp">
+    </ListView>
+
+</RelativeLayout>

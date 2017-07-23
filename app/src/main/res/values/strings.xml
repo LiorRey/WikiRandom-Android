@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WikiRandom</string>
+    <string name="leaderboard_note">Here are the top 10 WikiRandomers !\nKeep up the Randomness !</string>
+    <string name="game_description">"In WikiRandom, you try to guess what the next random\narticle would be, by choosing from 4 different answers.\nOnly 1 answer describes the random article correctly\n(and sometimes you'll get an image as a hint).\nGood luck and be Random !"</string>
+    <string name="wikipedia_credit">Wikipedia ..... Of course, for everything :-)</string>
+    <string name="credit_seperator">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</string>
+    <string name="eleonor_wang_credit">Eleonor Wang ..... For the nice speaker icons.</string>
+    <string name="eleonor_wang_link">Website :\nhttps://www.behance.net/thewindpla2e21</string>
+    <string name="ben_sound_credit">Bensound ..... For the lovely background music.</string>
+    <string name="ben_sound_link">Website :\nhttp://www.bensound.com/royalty-free-music</string>
+</resources>

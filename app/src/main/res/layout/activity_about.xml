@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviv.wikirandom.View.AboutActivity"
+    android:layoutDirection="ltr">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/gameTitle_About"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/buttonNext"
+            android:gravity="center"
+            android:text="WikiRandom"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/infoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/info"
+            android:tint="@android:color/black"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/gameDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout_About"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/game_description"/>
+
+    <ImageView
+        android:id="@+id/thankYouCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameDescription"
+        android:layout_alignLeft="@id/gameDescription"
+        android:layout_alignStart="@id/gameDescription"
+        android:layout_alignRight="@id/gameDescription"
+        android:layout_alignEnd="@id/gameDescription"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/thank_you_cat"/>
+
+    <TextView
+        android:id="@+id/thanksTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thankYouCat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Thanks to :"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/wikipediaCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thanksTo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/wikipedia_credit"/>
+
+    <TextView
+        android:id="@+id/creditSeperator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wikipediaCredit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/credit_seperator"/>
+
+    <TextView
+        android:id="@+id/eleonorWangCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditSeperator1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/eleonor_wang_credit"/>
+
+    <TextView
+        android:id="@+id/eleonorWangLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eleonorWangCredit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:autoLink="web"
+        android:text="@string/eleonor_wang_link"/>
+
+    <TextView
+        android:id="@+id/creditSeperator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eleonorWangLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/credit_seperator"/>
+
+    <TextView
+        android:id="@+id/benSoundCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditSeperator2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/ben_sound_credit"/>
+
+    <TextView
+        android:id="@+id/benSoundLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/benSoundCredit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:autoLink="web"
+        android:text="@string/ben_sound_link"/>
+
+</RelativeLayout>

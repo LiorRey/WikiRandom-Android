@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviv.wikirandom.View.RegisterActivity">
+
+    <TextView
+        android:id="@+id/gameTitle_Log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:text="WikiRandom"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameTitle_Log"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/emailField_Log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitle"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/passwordField_Log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailField_Log"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/registerButton_Log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:background="@drawable/bordered_button"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="registerAction"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/registerButton_Log"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:background="@drawable/bordered_button"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="loginAction"/>
+
+</RelativeLayout>
