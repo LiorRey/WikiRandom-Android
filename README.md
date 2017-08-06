@@ -14,7 +14,7 @@ After the guessing attempt, whether successful or not - the random article will 
 
 The game can be played in Hebrew, English and Russian.
 
-In addition, there is a high-score leaderboard - showing the top 10 scorers of WikiRandom (wether they are iOS or Android users).
+In addition, there is a high-score leaderboard - showing the top 10 scorers of WikiRandom (whether they are iOS or Android users).
 
 Here are some screenshots from WikiRandom:
 
