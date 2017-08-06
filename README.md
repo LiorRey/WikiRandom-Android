@@ -10,7 +10,7 @@ Sometimes, a thumbnail image taken from the article will be shown to give the us
 
 Each time the user is right - he/she will earn 1 point. There is no detraction of the user’s score for wrong answer.
 
-After the guessing attempt, wether successful or not - the random article will appear and be available for reading until the user decides to continue to the next round.
+After the guessing attempt, whether successful or not - the random article will appear and be available for reading until the user decides to continue to the next round.
 
 The game can be played in Hebrew, English and Russian.
 
